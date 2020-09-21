@@ -39,7 +39,7 @@ namespace DRAGONSTavern.Infra.Data.Repositories
             }
         }
 
-        public virtual void Add(T obj)
+        public void Add(T obj)
         {
             try
             {

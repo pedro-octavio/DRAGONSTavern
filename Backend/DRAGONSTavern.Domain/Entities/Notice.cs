@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 
 namespace DRAGONSTavern.Domain.Entities
 {
@@ -20,7 +19,6 @@ namespace DRAGONSTavern.Domain.Entities
 
         [Required]
         [MaxLength(400)]
-        [JsonPropertyName("title")]
         public string Title { get; private set; }
         [Required]
         [MaxLength(35000)]

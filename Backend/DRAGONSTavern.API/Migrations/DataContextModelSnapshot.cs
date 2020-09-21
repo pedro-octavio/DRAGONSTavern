@@ -82,7 +82,7 @@ namespace DRAGONSTavern.API.Migrations
                             Body = "The official website for the anime adaptation of Attack on Titan (Shingeki no Kyojin) has made a change to the preview for the anime's final season. In place of the confirmation for the October season, as it had been for almost the entire year, the site changed to a generic message saying 'scheduled to be broadcast on TV'.",
                             CreateDate = new DateTime(2020, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Postponement confirmed? Attack on Titan final season has changed date on site",
-                            UpdateDate = new DateTime(2020, 9, 21, 16, 21, 22, 579, DateTimeKind.Local).AddTicks(7171)
+                            UpdateDate = new DateTime(2020, 9, 21, 19, 57, 8, 617, DateTimeKind.Local).AddTicks(2545)
                         },
                         new
                         {
@@ -91,7 +91,42 @@ namespace DRAGONSTavern.API.Migrations
                             Body = "The official website of the anime adaptation of Jujutsu Kaisen has released a new trailer for the work. The video brings a little more history of the anime, featuring new characters and some of the action scenes of the work, as well as giving a preview of the opening 'Kaikai Kitan', sung by Eve. The anime is scheduled to debut on the 2nd of October.",
                             CreateDate = new DateTime(2020, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "September 19, 2020Jujutsu Kaisen - Supernatural action anime gets action trailer with OP",
-                            UpdateDate = new DateTime(2020, 9, 21, 16, 21, 22, 592, DateTimeKind.Local).AddTicks(9817)
+                            UpdateDate = new DateTime(2020, 9, 21, 19, 57, 8, 621, DateTimeKind.Local).AddTicks(2613)
+                        });
+                });
+
+            modelBuilder.Entity("DRAGONSTavern.Domain.Entities.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("varchar(10) CHARACTER SET utf8mb4")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("varchar(50) CHARACTER SET utf8mb4")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("varchar(200) CHARACTER SET utf8mb4")
+                        .HasMaxLength(200);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "cu20awb50q",
+                            Email = "email@admin.com",
+                            Password = "admin"
+                        },
+                        new
+                        {
+                            Id = "3js7zpr9ab",
+                            Email = "email@root.com",
+                            Password = "root"
                         });
                 });
 #pragma warning restore 612, 618

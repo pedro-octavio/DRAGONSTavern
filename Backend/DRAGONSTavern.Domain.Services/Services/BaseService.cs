@@ -49,7 +49,7 @@ namespace DRAGONSTavern.Domain.Services.Services
             }
         }
 
-        public void Add(T obj)
+        public virtual void Add(T obj)
         {
             try
             {

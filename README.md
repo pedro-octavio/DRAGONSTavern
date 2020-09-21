@@ -20,5 +20,6 @@
 * IdentityModel
 ## VERSIONS
 * 1.0.0 - First Commit;
+* 1.1.0 - User features added;
 ## CONTRIBUITORS
 * [**Pedro Octávio**](https://github.com/pedro-octavio) - *desenvolviment of project*
