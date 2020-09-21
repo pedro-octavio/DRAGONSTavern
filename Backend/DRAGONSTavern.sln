@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRAGONSTavern.Domain", "DRAGONSTavern.Domain\DRAGONSTavern.Domain.csproj", "{E336D41D-B53E-405E-B374-90743BB33F6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRAGONSTavern.Domain.Core", "DRAGONSTavern.Domain.Core\DRAGONSTavern.Domain.Core.csproj", "{F535EA8B-1DB3-42BD-8C82-12E2C54094EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRAGONSTavern.Domain.Services", "DRAGONSTavern.Domain.Services\DRAGONSTavern.Domain.Services.csproj", "{A2E50782-D651-4CF1-AD0D-57592425C8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRAGONSTavern.Domain.Helpers", "DRAGONSTavern.Domain.Helpers\DRAGONSTavern.Domain.Helpers.csproj", "{BF48C006-A592-4423-BB51-77669F7E9729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRAGONSTavern.Infra", "DRAGONSTavern.Infra\DRAGONSTavern.Infra.csproj", "{E351B573-1522-4326-9C95-5F55389151A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRAGONSTavern.API", "DRAGONSTavern.API\DRAGONSTavern.API.csproj", "{BF029E4B-12FC-461D-8C2A-B7FDCFA56893}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E336D41D-B53E-405E-B374-90743BB33F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E336D41D-B53E-405E-B374-90743BB33F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E336D41D-B53E-405E-B374-90743BB33F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E336D41D-B53E-405E-B374-90743BB33F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F535EA8B-1DB3-42BD-8C82-12E2C54094EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F535EA8B-1DB3-42BD-8C82-12E2C54094EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F535EA8B-1DB3-42BD-8C82-12E2C54094EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F535EA8B-1DB3-42BD-8C82-12E2C54094EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E50782-D651-4CF1-AD0D-57592425C8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E50782-D651-4CF1-AD0D-57592425C8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E50782-D651-4CF1-AD0D-57592425C8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E50782-D651-4CF1-AD0D-57592425C8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF48C006-A592-4423-BB51-77669F7E9729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF48C006-A592-4423-BB51-77669F7E9729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF48C006-A592-4423-BB51-77669F7E9729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF48C006-A592-4423-BB51-77669F7E9729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E351B573-1522-4326-9C95-5F55389151A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E351B573-1522-4326-9C95-5F55389151A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E351B573-1522-4326-9C95-5F55389151A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E351B573-1522-4326-9C95-5F55389151A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF029E4B-12FC-461D-8C2A-B7FDCFA56893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF029E4B-12FC-461D-8C2A-B7FDCFA56893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF029E4B-12FC-461D-8C2A-B7FDCFA56893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF029E4B-12FC-461D-8C2A-B7FDCFA56893}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {211B713A-52C6-45B3-B9FD-64BF7C733FFA}
+	EndGlobalSection
+EndGlobal
