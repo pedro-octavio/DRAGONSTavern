@@ -40,9 +40,6 @@ namespace DRAGONSTavern.API.Migrations
                         .HasColumnType("varchar(400) CHARACTER SET utf8mb4")
                         .HasMaxLength(400);
 
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime(6)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Notices");
@@ -54,8 +51,7 @@ namespace DRAGONSTavern.API.Migrations
                             BannerImageUrl = "1ae054383e.jpg",
                             Body = "# Tonikawa - Romance about teenagers who marry out of nowhere gets trailer with OP and date Crunchyroll today released a new video for the anime adaptation of Tonikaku Kawaii (Fly Me to The Moon). The trailer brings new details of the story, besides giving a preview of the opening “Koi no Uta”, sung by Akari Kitou (voice actress of the protagonist). The anime is scheduled to debut on October 2.",
                             CreateDate = new DateTime(2020, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Tonikawa - Romance about teenagers who marry out of nowhere gets trailer with OP and date",
-                            UpdateDate = new DateTime(2020, 5, 3, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Title = "Tonikawa - Romance about teenagers who marry out of nowhere gets trailer with OP and date"
                         },
                         new
                         {
@@ -63,8 +59,7 @@ namespace DRAGONSTavern.API.Migrations
                             BannerImageUrl = "747a8b59de.jpg",
                             Body = "The official website of the anime adaptation of Yuru Camp has released a trailer for the work. The video brings some scenes in the new season, featuring new characters and situations in which the protagonists find themselves. The anime is scheduled to debut in January 2021.",
                             CreateDate = new DateTime(2020, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Yuru Camp - Popular anime about campsites gets trailer and data for season 2",
-                            UpdateDate = new DateTime(2020, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Title = "Yuru Camp - Popular anime about campsites gets trailer and data for season 2"
                         },
                         new
                         {
@@ -72,8 +67,7 @@ namespace DRAGONSTavern.API.Migrations
                             BannerImageUrl = "cee1d3487e.jpg",
                             Body = "The official website for the anime adaptation of Horimiya has released the first trailer for the work. The video brings a little bit of history and how the protagonists met. The anime is scheduled to debut in January 2021.",
                             CreateDate = new DateTime(2020, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Horimiya - Romantic comedy anime with unusual couple gets first trailer",
-                            UpdateDate = new DateTime(2020, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Title = "Horimiya - Romantic comedy anime with unusual couple gets first trailer"
                         },
                         new
                         {
@@ -81,8 +75,7 @@ namespace DRAGONSTavern.API.Migrations
                             BannerImageUrl = "f1a7ac20e9.png",
                             Body = "The official website for the anime adaptation of Attack on Titan (Shingeki no Kyojin) has made a change to the preview for the anime's final season. In place of the confirmation for the October season, as it had been for almost the entire year, the site changed to a generic message saying 'scheduled to be broadcast on TV'.",
                             CreateDate = new DateTime(2020, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Postponement confirmed? Attack on Titan final season has changed date on site",
-                            UpdateDate = new DateTime(2020, 9, 21, 19, 57, 8, 617, DateTimeKind.Local).AddTicks(2545)
+                            Title = "Postponement confirmed? Attack on Titan final season has changed date on site"
                         },
                         new
                         {
@@ -90,8 +83,7 @@ namespace DRAGONSTavern.API.Migrations
                             BannerImageUrl = "0d5dff3c46.jpg",
                             Body = "The official website of the anime adaptation of Jujutsu Kaisen has released a new trailer for the work. The video brings a little more history of the anime, featuring new characters and some of the action scenes of the work, as well as giving a preview of the opening 'Kaikai Kitan', sung by Eve. The anime is scheduled to debut on the 2nd of October.",
                             CreateDate = new DateTime(2020, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "September 19, 2020Jujutsu Kaisen - Supernatural action anime gets action trailer with OP",
-                            UpdateDate = new DateTime(2020, 9, 21, 19, 57, 8, 621, DateTimeKind.Local).AddTicks(2613)
+                            Title = "September 19, 2020Jujutsu Kaisen - Supernatural action anime gets action trailer with OP"
                         });
                 });
 

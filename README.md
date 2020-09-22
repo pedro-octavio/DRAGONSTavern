@@ -10,6 +10,7 @@
 3) Update database using this command:
 > Visual Studio: Update-Database
 > Some text editor: dotnet  ef database update
+4) Insert a secret code in Backend/DRAGONSTavern.Domain/Secret.cs
 5) Run the Backend/DRAGONSTavern.API;
 ## MAKE WITH
 * .Net Core
@@ -21,5 +22,6 @@
 ## VERSIONS
 * 1.0.0 - First Commit;
 * 1.1.0 - User features added;
+* 1.2.0 - JWT Authentication added;
 ## CONTRIBUITORS
 * [**Pedro Octávio**](https://github.com/pedro-octavio) - *desenvolviment of project*

@@ -1,6 +1,7 @@
 ﻿using System;
 using DRAGONSTavern.Domain.Core.Interfaces.Services;
 using DRAGONSTavern.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DRAGONSTavern.API.Controllers
@@ -10,10 +11,16 @@ namespace DRAGONSTavern.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly ITokenService _tokenService;
 
-        public UserController(IUserService userService) => _userService = userService;
+        public UserController(IUserService userService, ITokenService tokenService)
+        {
+            _userService = userService;
+            _tokenService = tokenService;
+        }
 
         [HttpGet("{email}")]
+        [Authorize]
         public IActionResult Get([FromRoute] string email)
         {
             try
@@ -28,6 +35,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult Post([FromBody] User user)
         {
             try
@@ -46,6 +54,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public IActionResult Put([FromBody] User user)
         {
             try
@@ -62,6 +71,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Delete([FromRoute] string id)
         {
             try
@@ -69,6 +79,22 @@ namespace DRAGONSTavern.API.Controllers
                 _userService.Remove(id);
 
                 return Ok("User removed successfully.");
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("Authenticate")]
+        [AllowAnonymous]
+        public IActionResult Authenticate([FromBody] User user)
+        {
+            try
+            {
+                return Ok(_tokenService.GenerateToken(user));
             }
             catch (Exception ex)
             {

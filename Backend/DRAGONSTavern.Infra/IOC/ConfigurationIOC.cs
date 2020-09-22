@@ -21,6 +21,7 @@ namespace DRAGONSTavern.Infra.IOC
 
             builder.RegisterType<NoticeRepository>().As<INoticeRepository>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
+            builder.RegisterType<TokenService>().As<ITokenService>();
 
             builder.RegisterType<NoticeValidator>().As<IValidator<Notice>>();
             builder.RegisterType<SharedValidator>().As<IValidator<Shared>>();

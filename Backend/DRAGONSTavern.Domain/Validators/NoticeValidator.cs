@@ -10,18 +10,18 @@ namespace DRAGONSTavern.Domain.Validators
             RuleFor(x => x.Title)
                 .NotNull().WithMessage("The Title cannot be null.")
                 .NotEmpty().WithMessage("The Title cannot be empty.")
-                .MaximumLength(40).WithMessage("The maximum length of Title is 40.");
+                .MaximumLength(400).WithMessage("The maximum length of Title is 400.");
 
             RuleFor(x => x.Body)
                 .NotNull().WithMessage("The Body cannot be null.")
                 .NotEmpty().WithMessage("The Body cannot be empty.")
-                .MaximumLength(40).WithMessage("The maximum length of Body is 35.000.");
+                .MaximumLength(35000).WithMessage("The maximum length of Body is 35.000.");
 
             RuleFor(x => x.CreateDate)
                 .NotNull().WithMessage("The CreateDate cannot be null.");
 
             RuleFor(x => x.BannerImageUrl)
-                .MaximumLength(50).WithMessage("The maximum length of BannerImageUrl is 50.");
+                .MaximumLength(20).WithMessage("The maximum length of BannerImageUrl is 20.");
         }
     }
 }

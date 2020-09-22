@@ -8,12 +8,11 @@ namespace DRAGONSTavern.Domain.Entities
     public class Notice : Shared
     {
         [JsonConstructor]
-        public Notice(string title, string body, DateTime createDate, DateTime updateDate, string bannerImageUrl, string id) : base(id)
+        public Notice(string title, string body, DateTime createDate, string bannerImageUrl, string id) : base(id)
         {
             Title = title;
             Body = body;
             CreateDate = createDate;
-            UpdateDate = updateDate;
             BannerImageUrl = bannerImageUrl;
         }
 
@@ -25,7 +24,6 @@ namespace DRAGONSTavern.Domain.Entities
         public string Body { get; private set; }
         [Required]
         public DateTime CreateDate { get; private set; }
-        public DateTime UpdateDate { get; private set; }
         [MaxLength(20)]
         public string BannerImageUrl { get; private set; }
     }

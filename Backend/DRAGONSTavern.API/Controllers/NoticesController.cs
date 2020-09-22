@@ -1,6 +1,7 @@
 ﻿using System;
 using DRAGONSTavern.Domain.Core.Interfaces.Services;
 using DRAGONSTavern.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DRAGONSTavern.API.Controllers
@@ -14,6 +15,7 @@ namespace DRAGONSTavern.API.Controllers
         public NoticesController(INoticeService noticeService) => _noticeService = noticeService;
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Get()
         {
             try
@@ -28,6 +30,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public IActionResult Get([FromRoute] string id)
         {
             try
@@ -42,6 +45,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Post([FromBody] Notice notice)
         {
             try
@@ -60,6 +64,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public IActionResult Put([FromBody] Notice notice)
         {
             try
@@ -76,6 +81,7 @@ namespace DRAGONSTavern.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Delete([FromRoute] string id)
         {
             try
